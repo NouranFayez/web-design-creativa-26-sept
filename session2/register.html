@@ -8,11 +8,15 @@
 </head>
 
 <body>
-    <form>
+    <form autocomplete="off" method="post">
         <h2>Registration Form</h2>
         <!-- /register.html?firstName=dfghjkjhgf -->
         <label>First Name :</label>
-        <input name="firstName" autofocus required placeholder="enter your First Name">
+        <input name="firstName"
+         autocomplete="off"
+          autofocus required
+           placeholder="enter your First Name"
+           maxlength="14" minlength="3">
         <!-- firstName=dfgfdfg&userEmail=dfghjhgf%40sdvbn -->
         <label>Email :</label>
         <!-- !@#$%^&* -->
@@ -62,8 +66,35 @@
                 <option value="nt">Network</option>
             </select>
         </div>
+        <input type="text" pattern="[A-Za-z]{2 , 5}" name="testInput" title="please enter letters only">
+        
+        <input type="color">
+        <input type="date">
+        <input type="datetime-local">
+        <input type="month">
+        <input type="time">
+
+        <div>
+            <textarea placeholder="enter your comment" name="" id="" rows="5" cols="40"></textarea>
+        </div>
+
+        <div>
+            <input type="range" name="range" value="100" min="100" max="200">
+        </div>
+
+
+        <!-- fieldset , legend , datalist -->
+
+
+        
         <button>Register</button>
     </form>
 </body>
 
 </html>
+
+
+
+
+
+
