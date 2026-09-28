@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <form>
+        <h2>Registration Form</h2>
+        <!-- /register.html?firstName=dfghjkjhgf -->
+        <label>First Name :</label>
+        <input name="firstName" autofocus required placeholder="enter your First Name">
+        <!-- firstName=dfgfdfg&userEmail=dfghjhgf%40sdvbn -->
+        <label>Email :</label>
+        <!-- !@#$%^&* -->
+        <input name="userEmail" type="email">
+
+        <!-- firstName=&userEmail=fghjhgg2%40sdfghjk&userAge= -->
+        <label>Age</label>
+        <input name="userAge" type="number" min="10" max="20">
+
+        <!-- ?firstName=dddd&userEmail=&userAge= -->
+        <label>shipping area</label>
+        <input name="shipping" type="text" value="Alex" disabled>
+        <!-- firstName=dfgh&userEmail=&userAge=&shippingArea=Alex -->
+        <input name="shippingArea" type="text" value="Alex" readonly>
+
+        <div>
+            <label for="userPassword">Password</label>
+            <input type="password" id="userPassword" name="userPassword">
+        </div>
+        <div>
+            <!-- ?firstName=ghjhgf&userEmail=&userAge=&shippingArea=Alex&userPassword=&gender=on -->
+            <!-- userEmail=&userAge=&shippingArea=Alex&userPassword=&gender=female -->
+            <label for="">Gender</label>
+            <input type="radio" name="gender" value="male"> <label>Male</label>
+            <input type="radio" name="gender" value="female"> <span>Female</span>
+        </div>
+
+        <label>Courses</label>
+        <input type="checkbox" name="courses"> <label>Frontend</label>
+        <input type="checkbox" name="courses"> <label>Backend</label>
+        <input type="checkbox" name="courses"> <label>Mobile</label>
+        <input type="checkbox" name="courses"> <label>Network</label>
+        <!-- &courses=on&courses=on -->
+
+        <label>img</label>
+        <input type="file" multiple>
+
+        <div>
+            <label>Tracks</label>
+            <!-- tracks=Backend -->
+             <!-- tracks=nt -->
+            <select name="tracks" multiple >
+                <!-- tracks=Choose+your+track -->
+                <option disabled selected >Choose your track</option>
+                <option value="fr">Frontend</option>
+                <option value="bk">Backend</option>
+                <option value="nt">Network</option>
+            </select>
+        </div>
+        <button>Register</button>
+    </form>
+</body>
+
+</html>
