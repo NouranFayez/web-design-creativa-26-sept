@@ -7,3 +7,7 @@
 -- comment ==> 20 : 100 ==> letters
 -- date ==> required
 -- ID ==> numbers 
+
+-- search ==> fieldset , legend , datalist 
+          ==> input type="submit"
+          ==> input type="reset"

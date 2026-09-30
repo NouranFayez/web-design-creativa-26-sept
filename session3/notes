@@ -1,0 +1,14 @@
+-- details - summary - progress - time - datalist - dl - dt - dd 
+-- input type submit , input type reset 
+-- a ==> href ==> url , mailto , tel
+
+
+-- css methods ==> internal sheet
+                   inline element
+                   external sheet
+
+
+-- css sentax ==> selector {
+                        property : value 
+                            
+                        }                   
