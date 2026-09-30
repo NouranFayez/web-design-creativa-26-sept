@@ -65,3 +65,57 @@ p {
     margin-bottom: 4%;
     margin-top: 3%;
 }
+
+/* border ==> style , width , color */
+.card {
+    color: green;
+    width: 30%;
+    margin-left: 4%;
+    margin-top: 4%;
+    border-top-color: red;
+    border-top-width: 3px;
+    border-top-style: solid;
+    border-top: 2px solid red;
+    border: 2px solid red;
+    /* /* padding: 4%;  */
+}
+
+.card img {
+    width: 100%;
+}
+
+.card-info {
+    padding: 3%;
+}
+
+.card p {
+    background: aqua;
+    padding: 11%;
+    margin-top: 7%;
+}
+
+/* .card a{
+
+} */
+.card-link {
+    color: dimgray;
+    text-decoration: none;
+}
+.card-sm{
+        margin: 3% auto;
+    border-top-left-radius: 28px;
+    border-radius: 10px 20px 5px 30px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 5px;
+    border-bottom-left-radius: 30px;
+    border: 2px solid;
+    width: 30%;
+    padding: 5%;
+}
+
+.img-circle{
+    border-radius: 50%;
+    width: 200px;
+    height: 200px;
+}
