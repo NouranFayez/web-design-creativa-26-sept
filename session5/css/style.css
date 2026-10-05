@@ -15,6 +15,10 @@ a {
     color: inherit;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 /* global style */
 .container {
     /* background-color: cadetblue; */
@@ -86,6 +90,9 @@ a {
 /* custom style */
 nav {
     padding: 1% 0%;
+    position: sticky;
+    top:0;
+    z-index: 999999;
 }
 
 nav a {
@@ -167,3 +174,56 @@ nav ul {
     margin: 2% auto;
     display: block;
 }
+
+#up-arrow {
+    background: black;
+    width: 50px;
+    height: 50px;
+    display: inline-block;
+    border-radius: 50%;
+    text-align: center;
+    font-size: 25px;
+    line-height: 2;
+        position: fixed;
+    right: 4%;
+    bottom: 5%;
+ 
+}
+
+header{
+    padding: 3%;
+    background-color: teal;
+}
+.contact-card{
+    width: 30%;
+    display: inline-block;
+    background-color: white;
+    position: relative;
+}
+.w-100{
+    width: 100%;
+}
+.card-body{
+    padding: 3%;
+}
+.contact-card-link{
+        position: absolute;
+  
+    color: white;
+    background: black;
+    /* bottom: 0; */
+        margin-top: 6%;
+    left: 5%;
+}
+.position-img{
+   width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    position: absolute;
+    bottom: calc(100% - 30px);
+    left: 40%;
+}
+
+/* session5/index.html#about-section */
+/* position ==> fixed , sticky (static + fixed) , relative , absolute , static (default) */
+/* left , right , top , bottom , z-index */
