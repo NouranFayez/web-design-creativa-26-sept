@@ -1,0 +1,169 @@
+/* Reset style */
+* {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    box-sizing: border-box;
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+/* global style */
+.container {
+    /* background-color: cadetblue; */
+    width: 80%;
+    margin: auto;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.padding-top-bottom {
+    padding: 4% 0%;
+}
+
+.bg-light {
+    background-color: rgb(232, 232, 232);
+}
+
+.text-gray {
+    color: dimgrey;
+}
+
+.bg-orange {
+    background-color: orangered;
+}
+
+.title-style {
+    font-size: 50px;
+    text-transform: uppercase;
+
+}
+
+.hr-orange {
+
+    /* background: orangered; */
+    /* border-color: orangered;
+    border-width: 5px; */
+    border: 2px solid orangered;
+}
+
+.hr-style {
+    width: 10%;
+    margin: 2% auto;
+}
+
+.icon-circle {
+    font-size: 35px;
+    border: 4px solid orangered;
+    /* padding: 3%; */
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+    margin-top: 0%;
+    padding-top: 0%;
+    line-height: 2.5;
+    color: orangered;
+}
+
+.bg-black {
+    background-color: rgb(21, 21, 21);
+}
+
+.text-white {
+    color: white;
+}
+
+
+/* custom style */
+nav {
+    padding: 1% 0%;
+}
+
+nav a {
+    /* color: white; */
+}
+
+nav ul {
+    margin-left: 80%;
+}
+
+nav li,
+nav h2,
+nav ul {
+    display: inline-block;
+}
+
+.card {
+    width: 30%;
+    display: inline-block;
+    vertical-align: top;
+    border: 2px solid;
+}
+
+.card h3 {
+    margin: 3% 0%;
+}
+
+.custom-link {
+    background: black;
+    color: white;
+    padding: 2%;
+    margin: 4%;
+    width: 200px;
+    display: inline-block;
+
+}
+
+.margin-left-right {
+    margin: 0% 5%;
+}
+
+
+/* display ==> block , inline , inline-block , flex , none */
+
+
+#bg-img {
+    background-image: url(../images/istockphoto-517188688-612x612.jpg);
+    /* height: 300px; */
+    /* background-repeat: no-repeat; */
+    background-color: aqua;
+    /* background-position-x: right; */
+    /* background-position-y: bottom; */
+    /* background-size ==> cover contain ==> search */
+    /* background-attachment ==> search */
+    background-size: 100% 160%;
+    /* background-position-x: right; */
+}
+
+.overlay {
+    background-color: #0000007d;
+    background-color: rgba(0, 0, 0, 0.49);
+
+
+    /* rgb ==> 0 : 255  */
+    /* hexa ==> 0 : 9 // a : f */
+    /* height: 100%; */
+}
+
+.hr-white {
+    border: 2px solid white;
+
+}
+
+.btn-transparent {
+    background: transparent;
+    color: white;
+    border: 2px solid white;
+    padding: 1% 2%;
+    margin: 2% auto;
+    display: block;
+}
