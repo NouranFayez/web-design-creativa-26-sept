@@ -1,0 +1,133 @@
+/* Reset Style */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Outfit", sans-serif;
+}
+ul{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+}
+
+
+
+/* global style */
+
+.bg-light {
+    background-color: #eee;
+}
+
+.container {
+    width: 80%;
+    margin: auto;
+}
+
+.w-100 {
+    width: 100%;
+   
+}
+img{
+     display: block;
+}
+
+.padding-top-bottom {
+    padding: 3% 0%;
+}
+
+.flex-box{
+    display: flex;
+    /* row (default) , row-reverse , column , column-reverse */
+    /* flex-direction: row; */
+    /* flex-wrap ==> nowrap(default) , wrap , wrap-reverse  */
+    /* flex-wrap: wrap; */
+    /* flex-flow:  ==> flex-wrap + flex-direction; */
+    flex-flow: wrap row;
+    /* justify-content ==> flex-start (default) , flex-end - center , space-between , space-around , space-evenly */
+    justify-content: space-between;
+    /* align-items ==> flex-start , flex-end , center , stretch (default) */
+    /* align-items: flex-start; */
+    
+    background-color: black;
+    /* flex-start  , flex-end - center , space-between , space-around , space-evenly */ 
+    align-content: space-around;
+    height: 700px;
+
+    /* row-gap: 30px; */
+}
+
+.align-self-end{
+    align-self: flex-end;
+}
+.order-first{
+    order: -1;
+}
+.d-flex{
+    display: flex;
+}
+.align-items-center{
+    align-items: center;
+}
+.justify-content-between{
+    justify-content: space-between  ;
+}
+
+/* custom style */
+nav ul {
+    width: 30%;
+}
+.card {
+    width: 30%;
+    background-color: white;
+    /* box-shadow ==> x-offset y-offset blur spread color  */
+    box-shadow: 0px 0px 7px 3px #acacac;
+    position: relative;
+}
+
+.card h2 {
+    padding: 5%;
+}
+
+
+/* https://css-tricks.com/snippets/css/a-guide-to-flexbox/ */
+
+
+.position-relative{
+    position: relative;
+}
+.overlay{
+    position:absolute;
+    background-color: rgba(0, 0, 0, 0.656);
+    width: 100%;
+    height: 100%;
+    top:0;
+    color: white;
+    display: none;
+}
+.display-none{
+    display: none;
+    /* 0 : 1 */
+    opacity: 0;
+    /* hidden - visible */
+    visibility: hidden;
+}
+.card h2:hover{
+   color: blue;
+    font-size: 35px;
+    border: 1px solid;
+    background: beige;
+}
+
+/* .card:hover .overlay{
+    display: block;
+} */
+
+.card:hover{
+    border: 3px solid;
+}
+
+.card img:hover + .overlay{
+    display: block;
+}
