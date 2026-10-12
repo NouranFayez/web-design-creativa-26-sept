@@ -1,0 +1,62 @@
+/* rule type condition breakpoint  */
+/* @media */
+/*  screen , print , speetch  */
+/* max-width , min-width , range , orientation */
+/* breakpoint ==> screen sizes */
+@media (max-width: 700px){
+    .card-transform{
+        width: 50%;
+    }
+    .display-none{
+        display: none;
+    }
+}
+@media (max-width : 500px) {
+    .card-overflow{
+        width: 100%;
+    }
+    .card-transform{
+        width: 100%;
+    }
+    .custom-card{
+        width: 100%;
+    }
+    .card{
+        width: 100%;
+    }
+}
+
+
+/* https://getbootstrap.com/docs/5.3/layout/breakpoints/ */
+
+
+@media (min-width: 1200px){
+    .card-transform{
+        background-color: black;
+    }
+}
+
+
+@media (min-width: 400px) and (max-width:800px){
+ .card-transform{
+        background-color: red;
+    }
+}
+
+@media (orientation: portrait){
+
+}
+
+@media (orientation: landscape){
+
+}
+
+@media (max-width : 800px) , (orientation: portrait){
+
+}
+
+@media print{
+    .display-none{
+        display: none;
+    }
+}
