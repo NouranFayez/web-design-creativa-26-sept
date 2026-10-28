@@ -80,3 +80,173 @@
         border: 5px solid black;
     }
 }
+
+.custom-input{
+    border: 2px solid red;
+}
+
+.custom-input:focus{
+    outline: 0;
+    /* border-color: blue; */
+    background-color: lightgray;
+}
+input:checked{
+   width: 20px;
+   height: 20px; 
+}
+input:disabled{
+    background-color: goldenrod;
+}
+input:read-only{
+
+}
+
+ul li:first-child{
+    color: blue;
+}
+ul li:last-child{
+    color: red;
+    font-size: 20px;
+}
+
+ul li:nth-child(2){
+    color: green;
+    background-color: lightgray;
+}
+
+table {
+    border: 1px solid lightgray;
+    border-collapse: collapse;
+    width: 70%;
+}
+td , th{
+    border: 1px solid lightgray;
+    padding: 1% 2%;
+}
+
+tr:first-child{
+    background-color: teal !important;
+    color: white;
+}
+tr:nth-child(3){
+    background-color: #eee;
+}
+tr:nth-child(odd){
+     background-color: #eee;
+}
+tr:nth-child(odd):hover{
+    background-color: black;
+    color: white;
+}
+
+/* .custom-div p:not(.custom-p){
+    color: red;
+} */
+.custom-div p:not(:first-child){
+    color: red;
+}
+
+/* a ==> :visited , :link , :active ==> search */
+
+h2::first-letter{
+    color: red;
+    font-size: 40px;
+}
+h2::first-line{
+    color: blue;
+}
+::selection{
+    background-color: goldenrod;
+    color: white;
+}
+
+::placeholder{
+    color: green;
+}
+
+#custom-ul li::marker{
+    color: red;
+    font-size: 30px;
+}
+
+.div-before-after{
+    width: 40%;
+    background-color: #eee;
+    padding: 2%;
+    font-size: 30px;
+    margin: 3% auto;
+    position: relative;
+
+}
+.div-before-after::before{
+    content: "web design";
+    background-color: teal;
+    color: white;
+    padding: 2%;
+}
+.div-before-after::after{
+    content: "";
+    width: 50px;
+    height: 50px;
+    background-color: black;
+    display: block;
+    position: absolute;
+    top: 100%;
+}
+
+.custom-img{
+    width: 40%;
+    margin: 10% auto;
+}
+img{
+    width: 100%;
+}
+img:hover{
+    filter: grayscale(100%);
+        /* filter: brightness(0.5); */
+    filter: blur(4px);
+    filter: contrast(2);
+    filter: sepia(1);
+    filter: opacity(0);
+    /* filter==> drop-shadow() ==> search */
+}
+
+.flip-card{
+    perspective: 600px;
+    width: 200px;
+    height: 300px;
+     margin: 3% auto;
+     position: relative;
+
+}
+.inner-card{
+    
+    /* background-color: teal; */
+    width: 100%;
+    height: 100%;
+    transition: 2s;
+    transform-style: preserve-3d;
+    
+}
+.inner-card:hover{
+    transform: rotateY(180deg);
+}
+
+.back , .front{
+    width: 100%;
+    height: 100%;
+    position:absolute;
+}
+.back{
+    background-color: teal;
+    transform: rotateY(180deg);
+    backface-visibility: hidden;
+
+}
+.front{
+    background-color: goldenrod;
+    backface-visibility: hidden;
+}
+.flip-card:hover .inner-card{
+    transform: rotateY(180deg);
+}
