@@ -1,0 +1,82 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+
+/* global style */
+
+.container{
+    width: 80%;
+    margin: auto;
+}
+.padding-top-bottom{
+    padding: 4% 0%;
+}
+
+/* custom style */
+.animation-card{
+    width: 100px;
+    height: 100px;
+    background-color: teal;
+    margin-top: 4%;
+    animation-name: changeBgColor  ;
+    animation-duration: 5s;
+    border-radius: 50%;
+    /* animation-fill-mode: forwards; */
+    animation-iteration-count: infinite;
+    /* animation-iteration-count: infinite; */
+    /* animation-direction: alternate; */
+    /* animation-direction: alternate-reverse; */
+    /* animation-delay: 2s ; */
+    animation-timing-function: linear;
+    /* animation-play-state: paused; */
+
+
+    animation: changeBgColor infinite linear 4s , changeBorder 3s infinite  ;
+
+}
+
+.animation-card:hover{
+    animation-play-state: running;
+}
+
+@keyframes changeBgColor {
+    /* from {
+        background-color: gold;
+        border-radius: 0%;
+    }
+    to {
+        background-color: red;
+        border-radius: 50%;
+    } */
+
+    0%{
+        background-color: gold;
+    }
+    25%{
+        transform: translateX(200px);
+    }
+    50%{
+        /* transform: translateY(200px); */
+        /* transform: translateY(200px); */
+        transform: translate(200px, 200px);
+
+    }
+    75%{
+        transform: translate(0px , 200px);
+    }
+    100%{
+
+    }
+
+
+}
+
+@keyframes changeBorder {
+    from {
+        border: 5px solid black;
+    }
+}
