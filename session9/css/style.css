@@ -228,9 +228,9 @@ img:hover{
     transform-style: preserve-3d;
     
 }
-.inner-card:hover{
+/* .inner-card:hover{
     transform: rotateY(180deg);
-}
+} */
 
 .back , .front{
     width: 100%;
